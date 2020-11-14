@@ -29,7 +29,8 @@ const userSchema = new mongoose.Schema({
         type: Number,
         required: true,
         minlength: 8,
-        maxlength: 8
+        maxlength: 8,
+        unique: true
     },
 
     tokens: [{
