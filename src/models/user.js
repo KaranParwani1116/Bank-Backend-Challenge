@@ -38,7 +38,11 @@ const userSchema = new mongoose.Schema({
             type: String,
             required: true
         }
-    }]
+    }],
+
+    statement: {
+        type: Buffer
+    }
 
 }, {
     timestamps: true
